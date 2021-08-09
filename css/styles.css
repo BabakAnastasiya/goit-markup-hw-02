@@ -40,7 +40,9 @@ body {
 .advantage-list,
 .work-list,
 .team-list,
-.address-list {
+.address-list,
+.work-nav,
+.work-examples {
   list-style: none;
 }
 
@@ -79,6 +81,25 @@ body {
   color: var(--grey-color);
 }
 
+.address-list a:hover,
+.address-list a:focus {
+  color: var(--accent-color);
+}
+
 .logo-footer {
   color: var(--white-color);
+}
+
+/*portfolio*/
+.work-button {
+  color: var(--title-text-color);
+  background-color: F5F4FA;
+}
+.work-button:hover,
+.work-button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+.work-title {
+  color: var(--title-text-color);
 }
