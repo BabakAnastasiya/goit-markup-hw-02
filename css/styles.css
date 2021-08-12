@@ -11,6 +11,13 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
 /*logo*/
 .logo {
   color: black;
@@ -22,22 +29,21 @@ body {
 }
 .accent-logo {
   color: var(--accent-color);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
 }
 
 /*navigation*/
-.site-nav a {
-  color: var(--title-text-color);
-  text-decoration: none;
 
+.site-nav a,
+.auth-nav a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.site-nav a {
+  color: var(--title-text-color);
+  text-decoration: none;
 }
 
 .site-nav a:hover,
@@ -47,33 +53,16 @@ body {
 
 .auth-nav a {
   color: var(--primary-text-color);
-  text-decoration: none;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .auth-nav a:hover,
 .auth-nav a:focus {
   color: var(--accent-color);
 }
-.site-nav,
-.auth-nav,
-.advantage-list,
-.work-list,
-.team-list,
-.address-list,
-.work-nav,
-.work-examples {
-  list-style: none;
-}
 
 /*title*/
 .title {
   color: var(--white-color);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -85,12 +74,18 @@ body {
 .button {
   color: var(--white-color);
   background-color: var(--accent-color);
-
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
 }
 
 /*advantages*/
@@ -144,9 +139,8 @@ body {
 }
 
 /*footer*/
-.address {
-  color: var(--white-color);
-
+.address,
+.address-list a {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -154,20 +148,17 @@ body {
   letter-spacing: 0.03em;
 }
 
-.address-list a {
+.address-map {
+  color: var(--white-color);
+}
+.address a {
   color: var(--grey-color);
   text-decoration: none;
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
-.address-list a:hover,
-.address-list a:focus {
-  color: var(--accent-color);
+.address a:hover,
+.address a:focus {
+  color: var(--white-color);
 }
 
 .logo-footer {
@@ -176,25 +167,27 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 
 /*portfolio*/
 .work-button {
   color: var(--title-text-color);
   background-color: F5F4FA;
-
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 .work-button:hover,
 .work-button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
-.work-title {
+.work-examples-title {
   color: var(--title-text-color);
 
   font-weight: 700;
